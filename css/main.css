@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	font-size: 15px;
+	font-family: "Poppins", sans-serif;
+    font-style: normal;
+	background-color: #FAFAFA;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	padding: 1.5rem 1.5rem 2.5rem;
+}
+
+h1, .desc {
+	text-align: center;
+	color: hsl(234, 12%, 34%);
+}
+
+h1 {
+	margin: 0.5rem 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+h1 span {
+	color: hsl(212, 6%, 44%);
+	font-weight: 200;
+}
+
+.desc {
+	max-width: 32rem;
+	margin: auto;
+}
+
+.features, .middle-cont {
+	display: flex;
+	flex-direction: column;
+	gap: 1.7rem;
+}
+
+.features {
+	margin: 2.5rem auto 0;
+	align-items: center;
+}
+
+.middle-cont {
+	max-width: 370px;
+}
+
+.feature-card {
+	background-color: hsl(0, 0%, 100%);
+	max-width: 370px;
+	min-width: 200px;
+	min-height: 250px;
+	padding: 2rem;
+	border-radius: 0.3rem;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+
+.feature-card h2 {
+	color: hsl(234, 12%, 34%);
+	font-weight: 600;
+}
+
+.feature-card p {
+	margin: 0.2rem 0;
+	color: hsl(212, 6%, 44%);
+}
+
+.super {
+	border-top: 0.3rem solid hsl(180, 62%, 55%);
+}
+
+.builder {
+	border-top: 0.3rem solid hsl(0, 78%, 62%);
+}
+
+.karma {
+	border-top: 0.3rem solid hsl(34, 97%, 64%);
+}
+
+.calc {
+	border-top: 0.3rem solid hsl(212, 86%, 64%);
+}
+
+.feature-card img {
+	position: absolute;
+	right: 2rem;
+	bottom: 2.3rem;
+}
+
+@media all and (min-width: 1000px) {
+	h1 {
+		font-size: 2.2rem;
+	}
+	
+	.features {
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	.features > div{
+		flex-basis: 27%;
+		flex-grow: 1;
+	}
+}
